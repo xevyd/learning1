@@ -12,6 +12,8 @@ services:
     ports:
       - 3000:3000
     environment:
+      - DATABASE_HOST=db
+      - DATABASE_USERNAME=postgres
       - BUNDLE_PATH=/bundle_cache
       - GEM_HOME=/bundle_cache
       - GEM_PATH=/bundle_cache
